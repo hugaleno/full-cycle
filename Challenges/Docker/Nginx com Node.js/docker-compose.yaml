@@ -11,7 +11,7 @@ services:
       - node-network
     tty: true
     volumes:
-      - ./app:/app
+      - appdata:/app
     depends_on:
       - db
   nginx:
@@ -47,3 +47,4 @@ networks:
 
 volumes:
   dbdata:
+  appdata:
