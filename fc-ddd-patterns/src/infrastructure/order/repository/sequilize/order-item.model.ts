@@ -11,7 +11,7 @@ import OrderModel from "./order.model";
 
 
 @Table({
-  tableName: "order_items",
+  tableName: 'order-items',
   timestamps: false,
 })
 export default class OrderItemModel extends Model {
