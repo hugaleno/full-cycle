@@ -3,7 +3,7 @@ import PaymentFacade from "../facade/payment.facade";
 import TransactionRepostiory from "../repository/transaction.repository";
 import ProcessPaymentUseCase from "../usecase/process-payment/process-payment.usecase";
 
-export default class PaymentFacadeFactory {
+export class PaymentFacadeFactory {
   static create(): PaymentFacadeInterface {
     const repository = new TransactionRepostiory();
     const usecase = new ProcessPaymentUseCase(repository);
